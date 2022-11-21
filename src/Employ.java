@@ -94,6 +94,7 @@ class Employee {
                         for (Employee e1 : arr){
                             if (empCode == e1.code){
                                 arr.remove(e1);
+                                break;
                             }
                         }
                         break;
