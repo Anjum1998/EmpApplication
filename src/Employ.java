@@ -26,6 +26,7 @@ class Employee {
 
             ArrayList<Employee> arr=new ArrayList<Employee>();
             while(true) {
+                System.out.println("Select an option \n 1.Add Employee \n 2.View Employee \n 3.Search Employee \n 4.Delete Employee \n 5.Exit");
                 Scanner sc=new Scanner(System.in);
                 int option=sc.nextInt();
 
@@ -50,6 +51,19 @@ class Employee {
                         String emailId = sc.next();
                         Employee s=new Employee(code,name,designation,salary,companyName,phnNo,emailId);
                         arr.add(s);
+                        break;
+                    case 2:
+                        System.out.println("Display Employee Details ");
+                        for (Employee emp : arr) {
+
+                            System.out.println(emp.code);
+                            System.out.println(emp.name);
+                            System.out.println(emp.designation);
+                            System.out.println(emp.salary);
+                            System.out.println(emp.companyName);
+                            System.out.println(emp.phoneNo);
+                            System.out.println(emp.emailId);
+                        }
                         break;
                 }
 
