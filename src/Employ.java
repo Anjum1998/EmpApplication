@@ -23,20 +23,39 @@ class Employee {
     public class Employ {
 
         public static void main(String[] args) {
-            int ex;
+
             ArrayList<Employee> arr=new ArrayList<Employee>();
-            do {
+            while(true) {
                 Scanner sc=new Scanner(System.in);
                 int option=sc.nextInt();
 
                 switch (option)
+
                 {
+                    case 1:
+                        System.out.println("Enter employee details ");
+                        System.out.println("Enter the code");
+                        int code = sc.nextInt();
+                        System.out.println("Enter name");
+                        String name = sc.next();
+                        System.out.println("Enter designation");
+                        String designation = sc.next();
+                        System.out.println("Enter the salary");
+                        double salary = sc.nextDouble();
+                        System.out.println("Enter company name");
+                        String companyName = sc.next();
+                        System.out.println("Enter phone No");
+                        long phnNo= sc.nextLong();
+                        System.out.println("Enter email Id");
+                        String emailId = sc.next();
+                        Employee s=new Employee(code,name,designation,salary,companyName,phnNo,emailId);
+                        arr.add(s);
+                        break;
                 }
 
 
-                System.out.println("Do you Want to continue?1.yes 2.No");
-                ex=sc.nextInt();
-            }while (ex==1);
+
+            }
             }
         }
 
