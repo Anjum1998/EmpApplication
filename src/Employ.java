@@ -53,7 +53,7 @@ class Employee {
                         arr.add(s);
                         break;
                     case 2:
-                        System.out.println("Display Employee Details ");
+                        System.out.println("Display Employee Details...");
                         for (Employee emp : arr) {
 
                             System.out.println(emp.code);
@@ -95,6 +95,7 @@ class Employee {
                             if (empCode == e1.code){
                                 arr.remove(e1);
                                 break;
+
                             }
                         }
                         break;
