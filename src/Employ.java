@@ -87,6 +87,16 @@ class Employee {
                             }
                         }
                         break;
+                    case 4:
+                        System.out.println("Enter the employee code");
+                        Scanner obj2 = new Scanner(System.in);
+                        int empCode= obj2.nextInt();
+                        for (Employee e1 : arr){
+                            if (empCode == e1.code){
+                                arr.remove(e1);
+                            }
+                        }
+                        break;
 
 
 
