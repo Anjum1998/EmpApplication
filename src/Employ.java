@@ -65,6 +65,31 @@ class Employee {
                             System.out.println(emp.emailId);
                         }
                         break;
+                    case 3:
+                        System.out.println("Enter the employee code");
+
+                        int emp1 = sc.nextInt();
+                        for (Employee e1 : arr) {
+                            if (emp1 == e1.code){
+                                System.out.println("Employee Found");
+                                System.out.println("Details of employee");
+                                System.out.println(e1.code);
+                                System.out.println(e1.name);
+                                System.out.println(e1.designation);
+                                System.out.println(e1.salary);
+                                System.out.println(e1.companyName);
+                                System.out.println(e1.phoneNo);
+                                System.out.println(e1.emailId);
+                                break;
+                            }
+                            else {
+                                System.out.println("No such employee found");
+                            }
+                        }
+                        break;
+
+
+
                 }
 
 
